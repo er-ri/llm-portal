@@ -25,6 +25,7 @@ export default defineConfig((env) => {
   const viteEnv = loadEnv(env.mode, process.cwd()) as unknown as ImportMetaEnv
 
   return {
+    base: "/llm-portal/",
     resolve: {
       alias: {
         '@': path.resolve(process.cwd(), 'src'),
@@ -46,7 +47,7 @@ export default defineConfig((env) => {
         },
       },
       cors: {
-        origin: 'http://172.31.1.203:3002', // Allow this specific site
+        origin: 'http://localhost:3002', // Allow this specific site
         methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed methods if needed
         credentials: true, // Include credentials if necessary
       },
