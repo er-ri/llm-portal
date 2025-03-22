@@ -1,7 +1,5 @@
 {
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "[vue]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
 }
